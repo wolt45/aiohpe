@@ -1,5 +1,36 @@
-<h1>WALTER'S TEST</h1>
+<html ng-app="RBGIOHPEApp">
+  <head>
+    <meta charset="utf-8">
+    <title>GUSTILO CLINIC and AMBULATORY SURGERY CENTER</title>
 
-<p><a href="index.html">HOME</a></p>
-<p><a href="api_px_data.html">LOAD DATA</a></p>
-<p><a href="vw.px_data.html">SHOW</a></p>
+    <link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/tablex.css" rel="stylesheet"  type="text/css" />
+
+    <script src="lib/jquery-1.7.1.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/jquery.min.js" type="text/javascript"></script>
+    <script src="lib/jquery.main.js" type="text/javascript"></script>
+
+    <script src="lib/angular-1.2.18.min.js"></script>
+    <script src="lib/angular-route.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/txControllers.js"></script>
+  </head>
+  <body>
+    
+    <div class="row">
+
+      <div class="col-xs-12 col-sm-2 bs-docs-container" id="topLeft">
+          <ng:include src="'tpl/today_nav.html'"></ng:include>
+      </div>
+
+      <div class="col-xs-12 col-sm-10" id="mainContent">
+          
+
+        <ng:view>       </ng:view>
+      </div>
+    </div>
+  </body>
+</html>

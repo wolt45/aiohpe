@@ -1,0 +1,16 @@
+<ul class="list-group">
+	<li class="list-group-item" ng-repeat="px_APIitem in px_APIlist">
+		<a href="#/{{px_APIitem.PxRID}}" style="text-decoration:none; display:block">  
+
+			<div style="width:120px; position: absolute; display: inline-block">  
+				<img ng-src="images/{{px_APIitem.Foto}}" width="75" style="padding: 0 15 0 0">      
+			</div>
+
+			<div style="display:inline-block;">
+		    	<h4 class="list-group-item-heading">{{px_APIitem.pxname}}</h4>
+		    	{{px_APIitem.Address}}
+				<br>{{px_APIitem.pxstatus}}
+			</div>
+		</a>
+  	</li>
+<ul>
