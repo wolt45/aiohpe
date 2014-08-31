@@ -61,6 +61,7 @@
                         tx.executeSql(sql, [theItem.PxRID, theItem.pxname, theItem.Address, theItem.pxstatus, theItem.pxregdate, theItem.Foto], successQueryDB, errorCB);
                     });
                 });
+                alert("Synch successful!");
             },
 
             error: function (xhr) {
