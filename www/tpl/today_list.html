@@ -1,4 +1,4 @@
-<ul class="list-group">
+<!-- <ul class="list-group">
 	<li class="list-group-item" ng-repeat="px_APIitem in px_APIlist">
 		<a href="#/{{px_APIitem.PxRID}}" style="text-decoration:none; display:block">  
 
@@ -13,4 +13,22 @@
 			</div>
 		</a>
   	</li>
-<ul>
+<ul> -->
+
+<table class="table table-bordered table-hover">
+
+	<tr ng-repeat="px_APIitem in px_APIlist">
+		<td width="1%">
+			<a href="#/{{px_APIitem.PxRID}}" style="text-decoration:none; display:block">  
+				<img ng-src="images/{{px_APIitem.Foto}}" width="75" style="padding: 0 0 0 0">  
+			</a>   
+		</td>
+		<td>		
+			<a href="#/{{px_APIitem.PxRID}}" style="text-decoration:none; display:block">
+		    	{{px_APIitem.pxname}}
+		    	<br>{{px_APIitem.pxstatus}}
+		    	<span style="font-size:10px">{{px_APIitem.Address}}</span>
+			</a>
+	  	</td>
+  	</td>
+</table>

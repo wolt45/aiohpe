@@ -8,44 +8,33 @@ IOHPEApp.controller('PXListCtrl', function ($scope, $http){
   });
 });
 
-/*
-IOHPEApp.service('dataService', function($http) {
-delete $http.defaults.headers.common['X-Requested-With'];
-this.getData = function(callbackFunc) {
-    $http({
-        method: 'GET',
-        //url: 'http://localhost/atoday/api/apiSQLi.px_data.html',
-        url: 'http://localhost/atodayset/get_server_px.php',
-        params: 'limit=10, sort_by=pxname:desc',
-        headers: 'Content-Type: application/json'
-     }).success(function(data){
-        // With the data succesfully returned, call our callback
+
+// IOHPEApp.service('dataService', function($http) {
+// delete $http.defaults.headers.common['X-Requested-With'];
+// this.getData = function(callbackFunc) {
+//     $http({
+//         method: 'GET',
+//         //url: 'http://localhost/atoday/api/apiSQLi.px_data.html',
+//         url: 'http://192.168.0.100/atodayset/get_server_px.php',
+//         params: 'limit=10, sort_by=pxname:desc',
+//         headers: 'Content-Type: application/json'
+//      }).success(function(data){
+//         // With the data succesfully returned, call our callback
         
-        callbackFunc(data);
-    }).error(function(){
-        alert("error");
-    });
- }
-});
+//         callbackFunc(data);
+//     }).error(function(){
+//         alert("Error connecting to server!");
+//     });
+//  }
+// });
 
-IOHPEApp.controller('PXListCtrl', function($scope, dataService) {
-    //$scope.data = null;
-    dataService.getData(function(dataResponse) {
-        //alert("success!!!");
-        $scope.px_APIlist = dataResponse;
-    });
-});
-*/
-
-
-
-
-
-
-
-
-
-
+// IOHPEApp.controller('PXListCtrl', function($scope, dataService) {
+//     //$scope.data = null;
+//     dataService.getData(function(dataResponse) {
+//         //alert("success!!!");
+//         $scope.px_APIlist = dataResponse;
+//     });
+// });
 
 
 IOHPEApp.controller('PXDetailCtrl', function ($scope, $routeParams, $http){

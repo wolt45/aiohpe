@@ -1,23 +1,23 @@
 <div scroll-bookmark="ChartData">
 	<div class="panel panel-success">
-		<table class="table-border">
+
+		<table class="table-border table-condensed">
 			<tr>
-				<td rowspan=5><img ng-src="images/{{px_APIitem.Foto}}" width="120"></td>
-				<td rowspan=5>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+				<td rowspan=3><img ng-src="images/{{px_APIitem.Foto}}" width="120"></td>
+				<td rowspan=3>&nbsp;&nbsp;&nbsp;&nbsp;</td>
 			</tr>
 			<tr>
-				<th colspan=9><span>{{px_APIitem.PxRID}}</span></th>
-				<th colspan=9><span>{{px_APIitem.pxname}}</span></th>
+				<th>{{px_APIitem.PxRID}}</th>
+				<th><span style="font-size:12px">{{px_APIitem.pxregdate}}</span></th>
+				<th colspan=9>{{px_APIitem.pxname}}</th>
 			</tr>
 			<tr>
-				<td>{{px_APIitem.Address}}</td>
+				<td colspan=9>
+					{{px_APIitem.pxstatus}}, 
+					{{px_APIitem.Address}}
+				</td>
 			</tr>
-			<tr>
-				<td>{{px_APIitem.pxstatus}}</td>
-			</tr>
-			<tr>
-		  		<td>{{px_APIitem.pxregdate}}</td>
-		  	</tr>
 		</table>
+
 	</div>
 </div>
